@@ -1,0 +1,65 @@
+package com.comment.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+@Entity
+@Table(name="comments")
+public class Comment {
+	
+	private long id;
+	
+	private long clientId;
+	 
+	
+	private String courseId;
+	
+	
+	private String description;
+	  
+	
+	private String reply;
+	
+
+	public String getReply() {
+		return reply;
+	}
+
+	public void setReply(String reply) {
+		this.reply = reply;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public long getClientId() {
+		return clientId;
+	}
+
+	public void setClientId(long clientId) {
+		this.clientId = clientId;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public String getCourseId() {
+		return courseId;
+	}
+
+	public void setCourseId(String courseId) {
+		this.courseId = courseId;
+	}
+	
+	
+
+}

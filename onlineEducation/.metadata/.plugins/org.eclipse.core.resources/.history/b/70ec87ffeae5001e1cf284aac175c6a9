@@ -1,0 +1,5 @@
+package com.comment.entity;
+
+public class Comment {
+
+}
